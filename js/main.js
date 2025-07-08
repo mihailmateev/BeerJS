@@ -324,7 +324,7 @@
 
 function makeTimer() {
 
-		var endTime = new Date("23 July 2024 16:30:00 GMT+03:00");			
+		var endTime = new Date("23 July 2025 16:30:00 GMT+03:00");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
