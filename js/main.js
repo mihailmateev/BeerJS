@@ -141,7 +141,10 @@ export function initScrollAnimations() {
 
 export function initTimer() {
   function updateTimer() {
-    // 22 July 2026, 16:00 in Sofia is 13:00 UTC. Date.UTC avoids browser-specific string parsing.
+
+    const endTime = new Date('2026-07-22T16:00:00+03:00').getTime();
+
+
     const now = Date.now();
     const timeLeft = Math.max(0, Math.floor((EVENT_START_TIME - now) / 1000));
 
