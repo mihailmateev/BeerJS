@@ -1,5 +1,5 @@
 /**
- * Vanilla JavaScript utilities for Beer.js Summit 2025.
+ * Vanilla JavaScript utilities for BeerJS Agent Summit 2026.
  * The previous jQuery-based implementation has been replaced with
  * small, dependency-free functions. Each function is exported so that
  * it can be imported as an ES module.
@@ -133,7 +133,10 @@ export function initScrollAnimations() {
 
 export function initTimer() {
   function updateTimer() {
-    const endTime = new Date('22 July 2026 16:30:00 GMT+03:00').getTime();
+
+    const endTime = new Date('2026-07-22T16:00:00+03:00').getTime();
+
+
     const now = Date.now();
     const timeLeft = Math.max(0, Math.floor((endTime - now) / 1000));
 
