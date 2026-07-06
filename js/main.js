@@ -133,7 +133,7 @@ export function initScrollAnimations() {
 
 export function initTimer() {
   function updateTimer() {
-    const endTime = new Date('23 July 2025 16:30:00 GMT+03:00').getTime();
+    const endTime = new Date('22 July 2026 16:30:00 GMT+03:00').getTime();
     const now = Date.now();
     const timeLeft = Math.max(0, Math.floor((endTime - now) / 1000));
 
