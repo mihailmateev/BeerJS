@@ -1,9 +1,11 @@
 /**
- * Vanilla JavaScript utilities for Beer.js Summit 2025.
+ * Vanilla JavaScript utilities for BeerJS Agent Summit 2026.
  * The previous jQuery-based implementation has been replaced with
  * small, dependency-free functions. Each function is exported so that
  * it can be imported as an ES module.
  */
+
+const EVENT_START_TIME = Date.UTC(2026, 6, 22, 13, 0, 0);
 
 export function initFullHeight() {
   function setHeight() {
@@ -90,6 +92,12 @@ export function initCarousels() {
 
 export function initScrollAnimations() {
   const animatedItems = document.querySelectorAll('.ftco-animate');
+
+  if (!('IntersectionObserver' in window)) {
+    animatedItems.forEach(el => el.classList.add('fadeInUp', 'ftco-animated'));
+    return;
+  }
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -133,9 +141,9 @@ export function initScrollAnimations() {
 
 export function initTimer() {
   function updateTimer() {
-    const endTime = new Date('23 July 2025 16:30:00 GMT+03:00').getTime();
+    // 22 July 2026, 16:00 in Sofia is 13:00 UTC. Date.UTC avoids browser-specific string parsing.
     const now = Date.now();
-    const timeLeft = Math.max(0, Math.floor((endTime - now) / 1000));
+    const timeLeft = Math.max(0, Math.floor((EVENT_START_TIME - now) / 1000));
 
     const days = Math.floor(timeLeft / 86400);
     const hours = Math.floor((timeLeft % 86400) / 3600);

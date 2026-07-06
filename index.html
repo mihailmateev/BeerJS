@@ -2,415 +2,204 @@
 <html lang="en">
 
 <head>
-	<title>Beer.js Summit 2025</title>
+	<title>BeerJS Agent Summit 2026</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="BeerJS Agent Summit 2026 — JavaScript, AI agents, local runtimes, demos, community, and beer in Sofia.">
 
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-
 	<link rel="stylesheet" href="css/aos.css">
-
 	<link rel="stylesheet" href="css/ionicons.min.css">
-
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-	<style>
-		.sponsors .row>div {
-			text-align: center;
-		}
-
-		.sponsors a {
-			line-height: 150px;
-		}
-
-		.img {
-			background-position: 0% 0%;
-		}
-	</style>
+	<link rel="stylesheet" href="css/agent-summit.css">
 </head>
 
-<body>
-
+<body class="agent-summit">
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Beer.js Summit<span> 2025</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand" href="index.html">BeerJS Agent<span> Summit 2026</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
-
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                  	<li class="nav-item active"><a href="speakers.html" class="nav-link">Speakers</a></li>
-                  	<li class="nav-item active"><a href="streaming.html" class="nav-link">Streaming</a></li>
-					<li class="nav-item cta mr-md-2"><a href="https://beerjssummit2025.eventbrite.com" target="_blank"
-							class="nav-link">Register</a></li>
-
+					<li class="nav-item active"><a href="#home" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
+					<li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+					<li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
+					<li class="nav-item cta mr-md-2"><a href="https://beer-js-summit-2026.eventbrite.com" target="_blank" rel="noopener" class="nav-link">Register</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- END nav -->
 
-	<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');"
-		data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+	<header class="hero-agent js-fullheight" id="home">
 		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
-				data-scrollax-parent="true">
-				<div class="col-xl-10 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-					<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Beer.js
-						Summit<br><span> 2025</span></h1>
-					<p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.8 }">23 July, 2025.
-						Sofia, Bulgaria</p>
-					<p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Maymunarnika, Park
-						Borisova Gradina, Sofia, Bulgaria
-					</p>
-					<div id="timer" class="d-flex mb-3">
+			<div class="row align-items-center">
+				<div class="col-lg-7 ftco-animate">
+					<div class="eyebrow">Global Developer Community</div>
+					<h1 class="hero-title"><span class="hero-title-main">BeerJS Agent</span><br><span class="gradient-text">Summit 2026</span></h1>
+					<p class="hero-copy">JavaScript meets AI agents in a practical evening of local demos, real engineering stories, community conversations, and beer.</p>
+					<div class="hero-meta">
+						<div class="meta-pill">22 July 2026 · 4:00 PM</div>
+						<div class="meta-pill">Maymunarnika, Borisova Gradina</div>
+						<div class="meta-pill">Sofia, Bulgaria</div>
+					</div>
+					<div class="hero-actions">
+						<a class="btn btn-agent" href="https://beer-js-summit-2026.eventbrite.com" target="_blank" rel="noopener">Register for the 2026 edition</a>
+						<a class="btn btn-agent-outline" href="#schedule">View the preliminary program</a>
+					</div>
+					<div id="timer" class="timer d-flex flex-wrap mb-3">
 						<div class="time" id="days"></div>
-						<div class="time pl-4" id="hours"></div>
-						<div class="time pl-4" id="minutes"></div>
-						<div class="time pl-4" id="seconds"></div>
+						<div class="time" id="hours"></div>
+						<div class="time" id="minutes"></div>
+						<div class="time" id="seconds"></div>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="hero-visual" aria-label="JavaScript and AI agents illustration">
+						<div class="orbit-card">
+							<div class="js-badge">JS</div>
+							<div class="orbit-icon">🤖</div>
+							<div class="orbit-icon">👥</div>
+							<div class="orbit-icon">★</div>
+							<div class="orbit-icon">{ }</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="section-agent" id="about">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 mb-4 mb-lg-0">
+						<div class="agent-card">
+							<div class="eyebrow">12 years of real skills</div>
+							<h2 class="section-title">Modern AI development, BeerJS style.</h2>
+							<p class="section-lead">Expect concrete JavaScript and AI-agent sessions: local runtimes, automation workflows, testing, observability, and developer productivity patterns you can try after the event.</p>
+							<div class="feature-strip">
+								<span class="feature-pill">Build</span>
+								<span class="feature-pill">Test</span>
+								<span class="feature-pill">Observe</span>
+								<span class="feature-pill">Improve</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="info-grid">
+							<div class="agent-card info-card"><strong>16:00</strong><span>Doors open, welcome drinks, handshakes</span></div>
+							<div class="agent-card info-card"><strong>18:00</strong><span>Opening and community updates</span></div>
+							<div class="agent-card info-card"><strong>19:00</strong><span>Lightning talks and practical demos</span></div>
+							<div class="agent-card info-card"><strong>22:30</strong><span>Beer, snacks, and friendly chatting</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-agent" id="speakers">
+			<div class="container">
+				<div class="row justify-content-center mb-4">
+					<div class="col-lg-9 text-center">
+						<div class="eyebrow">Sessionize integration</div>
+						<h2 class="section-title">Speakers</h2>
+						<p class="section-lead mx-auto">The Sessionize speaker wall is connected to the 2026 preliminary program feed.</p>
+					</div>
+				</div>
+				<div class="sessionize-panel">
+					<iframe src="speakers.html?v=2026" class="sessionize-frame" title="BeerJS speakers from Sessionize"></iframe>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-agent" id="schedule">
+			<div class="container">
+				<div class="row justify-content-center mb-4">
+					<div class="col-lg-9 text-center">
+						<div class="eyebrow">Preliminary program</div>
+						<h2 class="section-title">Schedule</h2>
+						<p class="section-lead mx-auto">The preliminary 2026 program is loaded from Sessionize and will update as the agenda changes.</p>
+					</div>
+				</div>
+				<div class="sessionize-panel">
+					<script type="text/javascript" src="https://sessionize.com/api/v2/3sf8n0yt/view/GridSmart"></script>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-agent" id="sponsors">
+			<div class="container">
+				<div class="row justify-content-center mb-4">
+					<div class="col-lg-9 text-center">
+						<div class="eyebrow">Our partners</div>
+						<h2 class="section-title">Actual sponsors</h2>
+						<p class="section-lead mx-auto">Thank you to the companies and communities supporting BeerJS Agent Summit 2026.</p>
+					</div>
+				</div>
+
+				<div class="sponsor-tier">
+					<h3 class="tier-title">Gold sponsors</h3>
+					<div class="sponsor-grid">
+						<a class="sponsor-card gold text-logo" href="https://www.draftkings.com/" target="_blank" rel="noopener">DraftKings</a>
+						<a class="sponsor-card gold" href="https://www.epam.com/" target="_blank" rel="noopener"><img src="images/sponsors/EPAM_Logo.jpg" alt="EPAM"></a>
+						<a class="sponsor-card gold" href="https://dxc.com/" target="_blank" rel="noopener"><img src="images/sponsors/DXC_Logo.png" alt="DXC"></a>
+						<a class="sponsor-card gold" href="https://sirma.com/" target="_blank" rel="noopener"><img src="images/sponsors/sirma.png" alt="Sirma"></a>
+						<a class="sponsor-card gold" href="https://www.officernd.com/" target="_blank" rel="noopener"><img src="images/sponsors/Officernd_Logo.png" alt="OfficeRnD"></a>
+					</div>
+				</div>
+
+				<div class="sponsor-tier">
+					<h3 class="tier-title">Silver sponsors</h3>
+					<div class="sponsor-grid">
+						<a class="sponsor-card" href="https://sourcelab.bg/" target="_blank" rel="noopener"><img src="images/sponsors/sourcelab.png" alt="SourceLab"></a>
+						<a class="sponsor-card text-logo" href="https://www.facebook.com/maimunarnika/" target="_blank" rel="noopener">Maymunarnika</a>
+					</div>
+				</div>
+
+				<div class="sponsor-tier">
+					<h3 class="tier-title">Tech sponsors</h3>
+					<div class="sponsor-grid">
+						<a class="sponsor-card" href="https://www.microsoft.com/" target="_blank" rel="noopener"><img src="images/sponsors/microsoft.png" alt="Microsoft"></a>
+						<a class="sponsor-card text-logo" href="https://jstalks.net/" target="_blank" rel="noopener">JS.Talks</a>
+						<a class="sponsor-card" href="https://www.instagram.com/kinkao_sofia/" target="_blank" rel="noopener"><img src="images/sponsors/kinkao-logo-horizontal.png" alt="Kinkao Sofia"></a>
+						<a class="sponsor-card text-logo" href="https://www.jsexperts.net/" target="_blank" rel="noopener">JS Experts</a>
 					</div>
 				</div>
 			</div>
+		</section>
+	</main>
+
+	<footer class="footer-agent">
+		<div class="container d-flex flex-wrap justify-content-between align-items-center">
+			<p class="mb-2 mb-md-0">BeerJS Agent Summit 2026 · Sofia, Bulgaria</p>
+			<p class="mb-0">JavaScript · AI agents · Community · Beer</p>
 		</div>
-	</div>
-
-	<section class="ftco-counter img" id="section-counter">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 d-flex">
-					<div class="img d-flex align-self-stretch" style="background-image:url(images/about.jpg);">
-					</div>
-				</div>
-				<div class="col-md-6 pl-md-5 py-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4"><span>Some</span> Info</h2>
-							<p>
-								In July, 2025 we will talk again about JavaScript with beer in Maymunarnika, Park
-								Borisova Gradina.
-								We'll start with welcome drinks, will pass by several lightning talks, by JavaScript
-								gurus, and will conclude with networking.
-								<br />
-								Preliminary schedule:
-							<ul>
-								<li>
-									16:30-18:00 Check-in, Wellcome Drinks & Handshaking
-								</li>
-								<li>
-									18:00 - 19:00 Opening
-								</li>
-								<li>
-									19:00-22:30 Lightning talks (15 minutes each)
-								</li>
-								<li>
-									22:30~ Beer and snacks, and friendly chatting
-								</li>
-							</ul>
-
-							Some of the most well-known JS speakers will take part in this event. Hope to see you there!
-							</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section">
-		<div class="container" >
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 text-center heading-section ftco-animate">
-					<h2 class="mb-4"><span>Our</span> Speakers 2025</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 ftco-animate">
-					<iframe src="speakers.html?v=2021" style="
-						width: 100%;
-						border: none;
-						height: 380px;
-					"></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section bg-light">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 text-center heading-section ftco-animate">
-					<h2 class="mb-4"><span>Event</span> Schedule 2025</h2>
-				</div>
-			</div>
-			<div class="ftco-search">
-				<div class="row">
-					<div class="col-md-12 nav-link-wrap">
-					</div>
-					<div class="col-md-12 nav-link-wrap">
-						<!--<script type="text/javascript"
-							src="https://sessionize.com/api/v2/xg45h4pd/view/GridSmart"></script>-->
-                      <script type="text/javascript" 
-							src="https://sessionize.com/api/v2/xg45h4pd/view/GridSmart"></script>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section sponsors">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 text-center heading-section ftco-animate">
-					<h2 class="mb-4"><span>Our</span> Sponsors</h2>
-				</div>
-			</div>
-
-			<div class="row">
-              	<div class="col-md-4">
-					<a href="https://sourcelab.bg/">
-						<img src="images/sponsors/sourcelab.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="http://www.epam.com/">
-						<img src="images/sponsors/EPAM_Logo.jpg" class="img-fluid">
-					</a>
-				</div>
-				<!--<div class="col-md-4">
-					<a href="https://www.anthill.one/">
-						<img src="images/sponsors/anthill.png" class="img-fluid">
-					</a>
-				</div>-->
-				<!--<div class="col-md-4">
-					<a href="https://strypes.eu/">
-						<img src="images/sponsors/strypes.png" class="img-fluid">
-					</a>
-				</div>-->
-
-				<!--<div class="col-md-4">
-					<a href="https://www.anakatech.com/">
-						<img src="images/sponsors/anakatech.png" class="img-fluid">
-					</a>
-				</div>-->
-				<!--<div class="col-md-4">
-					<a href="https://www.coherentsolutions.bg/">
-						<img src="images/sponsors/coherent.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="https://pokerstarscareers.com/">
-						<img src="images/sponsors/pokerstars.png" class="img-fluid">
-					</a>
-				</div>-->
-				<!--<div class="col-md-4">
-					<a href="https://codexio.bg/">
-						<img src="images/sponsors/codexio.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="https://ridewithvia.com/">
-						<img src="images/sponsors/via.png" class="img-fluid">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="https://mentormate.com/">
-						<img src="images/sponsors/mentor-mate-logo-2.png" class="img-fluid">
-					</a>
-				</div>-->
-				<!--<!--<div class="col-md-4">
-					<a href="https://smsbump.com/">
-						<img src="images/sponsors/Yotpo X SMSBump.png" class="img-fluid">
-					</a>
-				</div>
-              	<div class="col-md-4">
-					<a href="https://www.sessionstack.com/">
-						<img src="images/sponsors/Print vector sessionstack logo2.png" class="img-fluid">
-					</a>
-				</div>-->
-              	<div class="col-md-4">
-					<a href="https://www.progress.com/">
-						<img src="images/sponsors/Progress_PrimaryLogo.png" class="img-fluid">
-					</a>
-				</div>
-              	<div class="col-md-4">
-					<a href="https://microsoft.com/">
-						<img src="images/sponsors/microsoft.png" class="img-fluid">
-					</a>
-				</div>
-                <div class="col-md-4">
-					<a href="https://www.scalefocus.com/">
-						<img src="images/sponsors/scale-focus-logo.png" class="img-fluid">
-					</a>
-				</div>
-                <div class="col-md-4">
-					<a href="https://sirma.com/">
-						<img src="images/sponsors/sirma.png" class="img-fluid">
-					</a>
-				</div>
-                 <div class="col-md-4">
-					<a href="https://dxc.com/">
-						<img src="images/sponsors/DXC_Logo.png" class="img-fluid">
-					</a>
-				</div>
-		 <div class="col-md-4">
-					<a href="https://www.accenture.com/">
-						<img src="images/sponsors/accenture-logo.png" class="img-fluid">
-					</a>
-				</div>
-		<div class="col-md-4">
-					<a href="https://www.siteground.com/">
-						<img src="images/sponsors/Siteground_logo.jpeg" class="img-fluid">
-					</a>
-				</div>
-		<div class="col-md-4">
-					<a href="https://pwrteams.com/">
-						<img src="images/sponsors/Pwrteams_logo.png" class="img-fluid">
-					</a>
-				</div>			
-                 <div class="col-md-4">
-					<a href="https://www.instagram.com/kinkao_sofia/">
-						<img src="images/sponsors/kinkao-logo-horizontal.png" class="img-fluid">
-					</a>
-				</div>             
-              	<!--<div class="col-md-4">
-					<a href="https://www.infopulse.com/">
-						<img src="images/sponsors/Infopulse_logo.png" class="img-fluid">
-					</a>
-				</div>
-                <div class="col-md-4">
-					<a href="https://www.bosch-digital.com/">
-						<img src="images/sponsors/Bosch-logo.svg.png" class="img-fluid">
-					</a>
-				</div>              
-                <div class="col-md-4">
-					<a href="https://intellias.com/">
-						<img src="images/sponsors/INTELLIAS_LOGO.png" class="img-fluid">
-					</a>
-				</div>
-              	<div class="col-md-4">
-					<a href="https://www.merkle.com/en/locations/europe/bulgaria.html">
-						<img src="images/sponsors/Merkle_15_Years_Logo.jpg" class="img-fluid">
-					</a>
-				</div>-->
-              	<!--<div class="col-md-4">
-					<a href="https://www.ciklum.com/">
-						<img src="images/sponsors/Ciklum_Horizontal_Logo_RGB.png" class="img-fluid">
-					</a>
-				</div>-->
-
-				<!--<div class="col-md-4">
-					<a href="https://sumup.com/">
-						<img src="images/sponsors/sumup.png" class="img-fluid">
-					</a>
-				</div>
-              				<div class="col-md-4">
-					<a href="https://www.officernd.com/">
-						<img src="images/sponsors/officernd.png" class="img-fluid">
-					</a>
-				</div>-->
-
-
-              	<!--<div class="col-md-4">
-					<a href="https://www.superhosting.bg/">
-						<img src="images/sponsors/Superhosting-02.png" class="img-fluid">
-					</a>
-				</div>
-                <div class="col-md-4">
-					<a href="https://dxc.com/">
-						<img src="images/sponsors/DXC_Logo.png" class="img-fluid">
-					</a>
-				</div>->
-			</div>
-		</div>
-	</section>
-
-	<!-- <section class="ftco-gallery">
-		<div class="container-wrap">
-			<div class="row no-gutters">
-				<div class="col-md-3 ftco-animate">
-					<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center"
-						style="background-image: url(images/image_1.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-instagram"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center"
-						style="background-image: url(images/image_2.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-instagram"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center"
-						style="background-image: url(images/image_3.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-instagram"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center"
-						style="background-image: url(images/image_4.jpg);">
-						<div class="icon mb-4 d-flex align-items-center justify-content-center">
-							<span class="icon-instagram"></span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<footer >
-
 	</footer>
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" /></svg></div>
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
-
-<script type="module">
-        import {
-                initFullHeight,
-                initLoader,
-                initNavigation,
-                initDropdowns,
-                initCarousels,
-                initScrollAnimations,
-                initTimer
-        } from './js/main.js';
-
-        initFullHeight();
-        initLoader();
-        initNavigation();
-        initDropdowns();
-        initCarousels();
-        initScrollAnimations();
-        initTimer();
-</script>
-
+	<script type="module">
+		import { initFullHeight, initLoader, initNavigation, initDropdowns, initCarousels, initScrollAnimations, initTimer } from './js/main.js';
+		initFullHeight();
+		initLoader();
+		initNavigation();
+		initDropdowns();
+		initCarousels();
+		initTimer();
+		initScrollAnimations();
+	</script>
 </body>
 
 </html>
