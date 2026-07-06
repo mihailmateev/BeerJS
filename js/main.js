@@ -5,8 +5,6 @@
  * it can be imported as an ES module.
  */
 
-const EVENT_START_TIME = Date.UTC(2026, 6, 22, 13, 0, 0);
-
 export function initFullHeight() {
   function setHeight() {
     document.querySelectorAll('.js-fullheight').forEach(el => {
@@ -92,12 +90,6 @@ export function initCarousels() {
 
 export function initScrollAnimations() {
   const animatedItems = document.querySelectorAll('.ftco-animate');
-
-  if (!('IntersectionObserver' in window)) {
-    animatedItems.forEach(el => el.classList.add('fadeInUp', 'ftco-animated'));
-    return;
-  }
-
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -146,7 +138,7 @@ export function initTimer() {
 
 
     const now = Date.now();
-    const timeLeft = Math.max(0, Math.floor((EVENT_START_TIME - now) / 1000));
+    const timeLeft = Math.max(0, Math.floor((endTime - now) / 1000));
 
     const days = Math.floor(timeLeft / 86400);
     const hours = Math.floor((timeLeft % 86400) / 3600);
