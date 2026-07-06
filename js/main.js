@@ -133,8 +133,10 @@ export function initScrollAnimations() {
 
 export function initTimer() {
   function updateTimer() {
-    // Sofia is UTC+03:00 in July; use an ISO timestamp so every browser parses the event start reliably.
+
     const endTime = new Date('2026-07-22T16:00:00+03:00').getTime();
+
+
     const now = Date.now();
     const timeLeft = Math.max(0, Math.floor((endTime - now) / 1000));
 
