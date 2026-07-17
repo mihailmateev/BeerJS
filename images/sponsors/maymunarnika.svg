@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title">
+  <title>Maymunarnika Bar</title>
+  <path d="M30 20h44v80H30z" fill="#211c1b"/>
+  <path d="M22 20h60v13H22zM22 87h60v13H22z" fill="#f7bf15"/>
+  <path d="M42 36h20v49H42z" fill="#f5f1e8"/>
+  <text x="101" y="60" font-family="Arial Black, Arial, sans-serif" font-size="35" fill="#211c1b">МАЙМУНАРНИКА</text>
+  <text x="104" y="93" font-family="Arial, sans-serif" font-size="22" letter-spacing="5" fill="#555">BAR</text>
+</svg>
