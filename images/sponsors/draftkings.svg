@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-labelledby="title">
+  <title>DraftKings</title>
+  <g fill="#64a70b">
+    <path d="M28 38 39 21l10 17 14-10-2 19 19 3-16 11 9 16-19-4-8 18-8-18-19 4 9-16L2 50l19-3-2-19z"/>
+    <text x="79" y="61" font-family="Georgia, serif" font-weight="700" font-size="48">DRAFT</text>
+  </g>
+  <text x="81" y="106" font-family="Georgia, serif" font-weight="700" font-size="48" fill="#111">KINGS</text>
+</svg>
